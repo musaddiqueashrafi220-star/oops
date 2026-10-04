@@ -1,0 +1,20 @@
+class Emp:
+    def __init__(self):
+        self.emp_id=int(input("Enter your id: "))
+        self.emp_name=input("Enter your name: ")
+        self.department=input("Enter your department: ")
+        self.designation=input("Enter your designation: ")
+        self.salary=float(input("Enter your salary: "))
+        self.city=input("enter your city: ")
+    def calculate_salary(self):
+        self.gross_salary=self.salary*12
+    def display(self):
+        print(f"Employee name :{self.emp_name}")
+        print(f"Employee id :{self.emp_id}")
+        print(f"Employee depatment :{self.department}")
+        print(f"Employee desingnation :{self.designation}")
+        print(f"Employee salary :{self.salary}")
+        print(f"Employee city:{self.city}")
+        
+E1=Emp()
+E1.display()
